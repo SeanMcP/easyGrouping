@@ -1,18 +1,118 @@
-body {
-
+body * {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 #formContainer {
 	width: 98%;
+	margin: 0 auto;
 	max-width: 600px;
+	padding-bottom: 40px;
 }
 form {
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: row wrap;
 }
-form > * {
-	margin: 5px 0;
+#fieldset {
+	flex: 1 90%;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 10px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+#fieldset p {
+	margin: 0 0 10px;
+	font-size: 1em;
+	text-align: center;
+}
+#numGroups {
+	flex: 1 100%;
+	margin-bottom: 10px;
+}
+input {
+	padding: 10px;
+	flex: 1 90%;
+	font-size: 1em;
+	margin: 0 0 10px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+input:last-child {
+	margin: 0;
+}
+#outputTitle {
+	flex: 1 90%;
+	text-align: center;
+	margin-bottom: 0;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
 }
 .output {
-	border: 1px solid blue;
+	flex: 1 90%;
+	/*border: 1px solid #ddd;*/
 	padding: 10px;
+	height: 1em;
+	/*margin: 10px 0 0;*/
+	font-size: 1em;
+	text-align: center;
+}
+#countOff {
+	margin: 0 0 10px;
+	font-weight: 700;
+}
+button {
+	flex: 1 100%;
+	padding: 10px;
+	border-radius: 2px;
+	border: none;
+	font-size: 1em;
+}
+#calcGroups {
+	font-weight: bold;
+	color: white;
+	background: linear-gradient(#03A9F4, #039BE5);
+}
+#calcGroups:hover {
+	background: #03A9F4;
+}
+#calcGroups:active {
+	background: #039BE5;
+}
+#resetGroups {
+	color: #455A64;
+	background: linear-gradient(#ECEFF1, #CFD8DC);
+}
+#resetGroups:hover {
+	background: #ECEFF1;
+}
+#resetGroups:active {
+	background: #CFD8DC;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	background: #333;
+	position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer a {
+	padding: 0.5em 0 0.25em;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.4);
+}
+footer img {
+	height: 1.25em;
+	opacity: 0.25;
+}
+footer img:hover {
+	opacity: 0.5;
+}
+footer img:active {
+	opacity: 0.3;
 }

@@ -1,3 +1,18 @@
 body {
-	
+
+}
+#formContainer {
+	width: 98%;
+	max-width: 600px;
+}
+form {
+	display: flex;
+	flex-flow: column nowrap;
+}
+form > * {
+	margin: 5px 0;
+}
+.output {
+	border: 1px solid blue;
+	padding: 10px;
 }

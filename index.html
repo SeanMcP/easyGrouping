@@ -5,7 +5,19 @@
 		<link rel="stylesheet" href="./css/main.css" type="text/css"/>
 	</head>
 	<body>
-
+		<div id="formContainer">
+			<form class="" action="index.html" method="post">
+				<input type="text" id="numPeople" name="numPeople" value="" placeholder="# of people">
+				<input type="text" id="numGroups" class="flexHalf" name="numGroups" value="" placeholder="# of groups">
+				<div id="orWedge">OR</div>
+				<input type="text" id="peoplePerGroup" class="flexHalf" name="peoplePerGroup" value="" placeholder="# per group">
+				<button type="button" id="calcGroups" name="calcGroups">Group!</button>
+				<div id="finalGroups" class="output"></div>
+				<div id="groupRemainder" class="output"></div>
+				<div id="countOff" class="output"></div>
+				<button type="button" id="resetGroups" name="resetGroups">Reset</button>
+			</form>
+		</div>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

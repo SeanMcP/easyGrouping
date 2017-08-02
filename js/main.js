@@ -19,7 +19,6 @@ calcGroups.addEventListener('click', function(){
   let peopleVal = numPeople.value;
   let groupsVal = numGroups.value;
   let perGroupVal = peoplePerGroup.value;
-  console.log(peoplePerGroup.value);
 
   if (!peopleVal) {
     alert("Please include the number of people");
@@ -40,8 +39,6 @@ calcGroups.addEventListener('click', function(){
   } else if (perGroupVal) {
     let calcDown = Math.floor(peopleVal / perGroupVal);
     let calcRem = peopleVal % perGroupVal;
-    console.log("perGroupVal: ", perGroupVal);
-    console.log("Plus one: ", perGroupVal + 1);
 
     finalGroups.textContent = `There will be ${calcDown} group(s) of ${perGroupVal}`;
     if (calcRem > 0) {

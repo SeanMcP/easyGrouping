@@ -24,7 +24,7 @@ calcGroups.addEventListener('click', function(){
     alert("Please include the number of people");
   } else if (!groupsVal && !perGroupVal) {
     alert("Please choose either number of groups or people per group")
-  } else if (groupsVal && perGroupVal) {
+  } else if (groupsVal > 0 && perGroupVal > 0) {
     alert("Please choose either number of groups OR people per group");
   } else if (groupsVal) {
     let calcDown = Math.floor(peopleVal / groupsVal);
